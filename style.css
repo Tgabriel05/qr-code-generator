@@ -79,7 +79,7 @@ input[type='text']:focus{
 /*------------------PAGE 2----------------------*/
 
 img#logo{
-  width: 6rem;
+  width: 7rem;
   margin: 35px 60px 0;
   display: none;
 }
@@ -88,7 +88,7 @@ img#logo{
   justify-self: center;
   align-items: center;
   text-align: center;
-  padding-top: 35px;
+  padding-top: 25px;
 }
 #page2 a{
   background-color: #3662E3;
