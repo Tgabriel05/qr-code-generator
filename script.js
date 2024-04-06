@@ -6,7 +6,7 @@ const qrBtn = document.getElementById('qr-btn'),
       copyBtn = document.getElementById('copy-btn'),
       page1Display = document.getElementById('page1'),
       page2Display = document.getElementById('page2'),
-      bgLogo = document.getElementById('bg');
+      bgLogo = document.getElementById('logo');
 
 //API QR CODE
 
