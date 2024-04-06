@@ -60,10 +60,7 @@ body{
   bottom: 6px;
   cursor: pointer;
 }
-/*NO CHANGING BACKGROUND-COLOR IN THE INPUTS*/
-input[type='text']:focus{
-  background-color: transparent !important;
-}
+
 /*ERROR INPUT*/
 .error{
   animation: shake 0.1s linear 10;
