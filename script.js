@@ -6,7 +6,7 @@ const qrBtn = document.getElementById('qr-btn'),
       copyBtn = document.getElementById('copy-btn'),
       page1Display = document.getElementById('page1'),
       page2Display = document.getElementById('page2'),
-      bgLogo = document.getElementById('bg');
+      bgLogo = document.getElementById('logo');
 
 //API QR CODE
 
@@ -48,10 +48,18 @@ function copyQuote(){
   copyBtn.innerHTML = 'Copied <i class="fa-solid fa-check"></i>';
   setTimeout(()=>{
     copyBtn.innerHTML = `Share <i class="fa fa-link" ></i>`
-  },2000);
+  },1500);
   
 }
+function goToPage1(){
+  urlInput.value = '';
+  page1Display.style.display = 'block';
+  page2Display.style.display = 'none';
+  bgLogo.style.display = 'none';
+  qrCodeDisplay.innerHTML = '';
+};
 //CLICKING BUTTONS
+bgLogo.addEventListener('click', goToPage1);
 qrBtn.addEventListener('click', getQrCode);
 urlInput.addEventListener('keydown', (e)=>{
   if(e.key === 'Enter'){
