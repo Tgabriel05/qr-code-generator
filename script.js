@@ -51,13 +51,6 @@ function copyQuote(){
   },1500);
   
 }
-function goToPage1(){
-  urlInput.value = '';
-  page1Display.style.display = 'block';
-  page2Display.style.display = 'none';
-  bgLogo.style.display = 'none';
-  qrCodeDisplay.innerHTML = '';
-};
 //CLICKING BUTTONS
 bgLogo.addEventListener('click', goToPage1);
 qrBtn.addEventListener('click', getQrCode);
