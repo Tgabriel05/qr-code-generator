@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #111729;
+  overflow: hidden;
+}
+.container{
+  position: relative;
+  margin: 100px auto 0;
+  width: 520px;
+  z-index: 1;
+}
+.container #bg{
+  position: absolute;
+  left: 245px;
+  top: -50px;
+  z-index: -1;
+}
+#page1{
+  display: block;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding-top: 155px;
+}
+#page1 img{
+  margin-bottom: 20px;
+}
+#page1 input{
+  width: 100%;
+  height: 50px;
+  background-color: #090d17;
+  outline: none;
+  border: 2px solid #3662E3;
+  border-radius: 15px;
+  color: #fff;
+  padding: 0px 112px 0 20px;
+}
+#page1 input::placeholder{
+  color: #364153;
+  font-size: 12px;
+  font-weight: 600;
+}
+#page1 button{
+  background-color: #3662E3;
+  border: none;
+  outline: none;
+  position: absolute;
+  bottom: 10px;
+  height: 38px;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 10px;
+  right: 7px;
+  bottom: 6px;
+  cursor: pointer;
+}
+/*NO CHANGING BACKGROUND-COLOR IN THE INPUTS*/
+input[type='text']:focus{
+  background-color: transparent !important;
+}
+/*ERROR INPUT*/
+.error{
+  animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+  0%{transform: translateX(0);}
+  25%{transform: translateX(2px);}
+  50%{transform: translateX(0);}
+  75%{transform: translateX(-2px);}
+  100%{transform: translateX(0);}
+}
+/*ERROR INPUT*/
+/*------------------PAGE 2----------------------*/
+
+img#logo{
+  width: 6rem;
+  margin: 35px 60px 0;
+  display: none;
+}
+#page2{
+  display: none;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 35px;
+}
+#page2 a{
+  background-color: #3662E3;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+#page2 a:hover{
+  background-color: #3661e3c8;
+}
+#page2 .links i{
+  font-size: 12px;
+  margin-left: 5px;
+}
+#page2 .links{
+  display: inline-flex;
+  gap: 25px;
+  margin-top: 60px;
+}
+.bg-blue{
+  background-color: #4e80ee33;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto 0;
+  z-index: -1;
+  text-align: center;
+  justify-content: center;
+}
+.qr-code{
+  z-index: 1;
+  background: #fff;
+  width: 75%;
+  height: 80%;
+  border-radius: 20px;
+  position: relative;
+  top: 30px;
+  display: block;
+  margin: 0 auto 0;
+  padding: 20px;
+}
+#qr-code{
+  width: 100%;
+}
+/*----------------------MEDIA QUERY--------------------------*/
+
+@media screen and (max-width: 640px) {
+  html,body{
+    overflow: hidden;
+  }
+  .container{
+  width: 320px;
+  }
+  .container #bg{
+    position: absolute;
+    left: 105px;
+    top: -50px;
+    z-index: -1;
+  }
+  #page1 input{
+    height: 42px;
+  }
+  #page1 button{
+    height: 30px;
+    font-size: 12px;
+    padding: 8px 25px 15px;
+  }
+  #page2 a{
+    font-size: 13px;
+    padding: 15px 35px
+  }
+}

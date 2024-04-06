@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR random Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ff92a144d1.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <img id="logo" src="assets/logo-qr-generator.svg">
+
+  <div class="container">
+    <img id="bg" src="assets/bg-illustration.svg">
+    <div id="page1">
+      <img src="assets/logo-qr-generator.svg">
+      <div class="code">
+        <input type="text" placeholder="Enter an url" id="url-input">
+        <button id="qr-btn">QR code</button>
+      </div>
+    </div>
+    <div id="page2">
+      <div class="bg-blue">
+        <div class="qr-code">
+          <div id="qr-code"></div>
+        </div>
+      </div>
+      <div class="links">
+        <a id="download-btn" title="Download QR-Code">Download <i class="fa-solid fa-download"></i></a>
+        <a id="copy-btn" title="Copy Quote">Share <i class="fa fa-link" ></i></a>
+      </div>
+    </div>
+    
+  </div>
+
+
+  <!-----------------------SCRIPT---------------------------->
+  <script src="script.js"></script>
+</body>
+</html>
