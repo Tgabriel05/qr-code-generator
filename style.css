@@ -82,6 +82,7 @@ img#logo{
   width: 7rem;
   margin: 35px 60px 0;
   display: none;
+  cursor: pointer;
 }
 #page2{
   display: none;
